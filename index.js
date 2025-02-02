@@ -16,6 +16,9 @@ mongoose.connect('mongodb+srv://pranav:1812kedar@pranav.tigxsvl.mongodb.net/Trek
 
 // Use the user routes
 app.use('/api', router);
+app.get('/', (req,res)=>{
+    res.send("Hello World");
+})
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
