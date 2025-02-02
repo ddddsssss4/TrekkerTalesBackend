@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 const PORT = process.env.PORT || 3000;
 app.use(cors({
-    origin: ['http://localhost:5173', 'https://trekkertalesbackend.onrender.com'], // add more origins as needed
+    origin: ['http://localhost:5173', 'https://trekker-tales-frontend.vercel.app'], // add more origins as needed
     credentials: true
 }));
 // Connect to MongoDB
